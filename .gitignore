@@ -1,0 +1,32 @@
+# ============================================================
+# .gitignore — Archivos que NO deben subirse a Git
+# ============================================================
+# .env contiene contraseñas y configuración sensible — NUNCA a Git
+.env
+
+# Dependencias instaladas — demasiado pesadas para Git
+# Se reinstalan con: composer install
+/vendor/
+/node_modules/
+
+# Archivos compilados — se regeneran con: npm run build
+/public/build/
+/public/hot/
+/public/storage
+
+# Archivos de caché y almacenamiento temporal
+/storage/*.key
+/storage/logs/*.log
+/.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+
+# Archivos del IDE (opcionales según preferencia del equipo)
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
